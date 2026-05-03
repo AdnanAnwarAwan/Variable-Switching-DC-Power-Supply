@@ -1,0 +1,36 @@
+Reference,Value,Part Number,Package,Quantity,Description,Supplier
+U1,STM32F103C8T6,STM32F103C8T6,LQFP48,1,ARM Cortex-M3 72MHz MCU,DigiKey
+Q1,IRF540N,IRF540NPBF,TO-220,1,N-channel MOSFET 100V 33A Hi-side,Mouser
+Q2,IRF540N,IRF540NPBF,TO-220,1,N-channel MOSFET 100V 33A Lo-side,Mouser
+U2,IR2104,IR2104STRPBF,SOIC-8,1,Half-bridge gate driver,DigiKey
+U3,INA226,INA226AIDGST,MSOP-10,1,16-bit I2C current/power monitor,DigiKey
+U4,AMS1117-3.3,AMS1117-3.3,SOT-223,1,LDO 5V to 3.3V 1A regulator,DigiKey
+BR1,GBU806,GBU806-G,GBU,1,Bridge rectifier 8A 600V,Mouser
+C1,4700uF/50V,EEU-FC1H472,35x30mm radial,2,Bulk electrolytic capacitor,DigiKey
+C2,470uF/35V,EEU-FC1V471,18x16mm radial,2,Output electrolytic capacitor,DigiKey
+C3,100nF,CC0805KRX7R9BB104,0805,10,MLCC decoupling capacitor,DigiKey
+C4,10nF,CC0805KRX7R9BB103,0805,4,MLCC filter capacitor,DigiKey
+C5,22pF,CC0805JRNPO9BB220,0805,2,Crystal load capacitor,DigiKey
+Cx,100nF X2,B32922C3104,X2 rated,1,X-cap EMI filter 275Vac,Mouser
+L1,CMC 10mH,ACM7060-701-2PL-TL01,Through-hole,1,Common mode choke,DigiKey
+L2,100uH/5A,SRR1260-101Y,SMD 12.6x12.6,1,Power inductor 100uH 5A,DigiKey
+R1,100k,CRCW0805100KFKEA,0805,1,Voltage divider top resistor,DigiKey
+R2,12k,CRCW080512K0FKEA,0805,1,Voltage divider bottom resistor,DigiKey
+R3,330,CRCW0805330RFKEA,0805,3,LED current limiting resistors,DigiKey
+R4,10m/5W,WSL2512R0100FEA,2512,1,Current sense shunt resistor,DigiKey
+R5,4.7k,CRCW08054K70FKEA,0805,2,I2C pull-up resistors,DigiKey
+R6,10k,CRCW080510K0FKEA,0805,5,General purpose / pull-up,DigiKey
+NTC1,10k NTC,NTCLE100E3103JB0,0805,1,NTC thermistor temperature sense,DigiKey
+F1,2A slow,0251002.MXL,5x20mm fuse,1,Slow-blow fuse 2A 250V,Mouser
+MOV1,275V,SIOV-S14K275,S14,1,Metal oxide varistor 275V,DigiKey
+Y1,8MHz,ABMM-8.000MHZ-B2-T,HC-49SMD,1,Crystal oscillator,DigiKey
+LED1,Green,LTST-C150KGKT,0805,1,CV mode indicator,DigiKey
+LED2,Amber,LTST-C150AKT,0805,1,CC mode indicator,DigiKey
+LED3,Red,LTST-C150KRKT,0805,1,Fault indicator,DigiKey
+ENC1,EC11,PEC11R-4215F-S0024,Through-hole,1,Rotary encoder with switch,DigiKey
+OLED1,SSD1306 128x64,SSD1306,0.96in module,1,I2C OLED display,Amazon/AliExpress
+Q3,2N7002,2N7002-7-F,SOT-23,1,N-MOSFET fan driver,DigiKey
+D1,1N4007,1N4007-T,DO-41,1,Flyback diode fan driver,DigiKey
+J1,AC Input,TE 1-2834037-0,2-pin IEC,1,AC mains input connector,DigiKey
+J2,DC Output,691210110002,Screw terminal 2-pin,1,DC output terminal block,DigiKey
+J3,SWD,22-28-4030,3-pin header,1,SWD programming header,DigiKey
