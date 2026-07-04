@@ -29,11 +29,3 @@ Internal harnesses for the enclosed supply, built to IPC/WHMA-A-620 workmanship.
    crossing is unavoidable, cross at 90°.
 7. **Safety spacing:** H1 maintains creepage to SELV wiring; primary-side terminals
    covered (finger-safe) since the enclosure may be opened for service.
-
-## Flight-harness deltas (interview talking point)
-
-The same harness redesigned for a launch vehicle: MIL-DTL-38999 or Micro-D
-(MIL-DTL-83513) circular connectors with 360° backshell shield termination, M22759
-wire, lacing tape or approved ties (no adhesive mounts), twisted shielded pairs for
-all signals, redundant returns, and every harness built to a released drawing with a
-pin-to-pin continuity + DWV (dielectric withstand) test before installation.
