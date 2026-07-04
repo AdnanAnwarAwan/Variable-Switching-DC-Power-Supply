@@ -230,19 +230,6 @@ cd Variable-Switching-DC-Power-Supply/firmware
 
 ---
 
-## Relevance to Aerospace Avionics
-
-This project exercises the same disciplines required for launch vehicle and spacecraft avionics power design:
-
-- **Digital / analog / power on one board** — switching power stage, precision analog sensing (INA226 Kelvin shunt, ADC dividers), and an MCU control/telemetry core, tightly co-designed.
-- **Requirement-driven development** — see [`docs/requirements.md`](docs/requirements.md): numbered requirements with verification methods, written before topology selection.
-- **Trade studies** — topology, sensing, and control-loop trades documented in [`docs/trade_studies.md`](docs/trade_studies.md).
-- **Simulation before hardware** — SPICE-verified power stage (see [`simulation/`](simulation/)); predicted 23 mVpp ripple, measured < 30 mVpp on hardware.
-- **Layered protection** — hardware gate-driver shutdown path independent of firmware, plus firmware OCP/OVP/thermal (avionics philosophy: protection must not rely on software alone).
-- **Root-cause test methodology** — staged bring-up with pass criteria in [`docs/test_procedure.md`](docs/test_procedure.md), executed on Rigol/Keysight bench equipment.
-- **Flight evolution path** — how this bench design maps to a 28V-bus avionics power module (derating, EEE parts, CAN telemetry, conformal coat) in [`docs/firefly_jd_mapping.md`](docs/firefly_jd_mapping.md).
-
----
 
 ## License
 
