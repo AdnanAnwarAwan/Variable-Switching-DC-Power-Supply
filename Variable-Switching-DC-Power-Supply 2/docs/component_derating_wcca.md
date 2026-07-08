@@ -30,8 +30,7 @@ never push a part past its limit.
 | AMS1117-3.3 | 15 V in, 1 A | 5 V in, ~150 mA | Large | ✅ PASS (but no thermal pad — fine at this load) |
 | IR2104 bootstrap | VB−VS abs max 625 V | 45 V bus | Large | ✅ PASS; check bootstrap refresh at D→100 % (firmware caps duty at MAX_DUTY, leaving refresh time — deliberate) |
 
-## Findings (be ready to defend these — finding your own failures is the point)
-
+## Findings 
 1. **L2 saturation at full load is a genuine design escape.** ΔIL = 0.456 A (SPICE-verified),
    peak = 5.23 A against a 5 A Isat part. Saturating inductance collapses → ripple current
    spikes → efficiency and OCP behavior degrade at exactly max load. Corrective action:
