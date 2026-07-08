@@ -53,9 +53,3 @@ is verified against.
 | ENV-2 | Creepage/clearance | 4.0 mm / 2.0 mm mains-to-SELV (IEC 60950 basis) | Layout DRC |
 | ENV-3 | Component derating | Per [`component_derating_wcca.md`](component_derating_wcca.md) | Analysis |
 
-## Requirement-writing rules used here (interview talking point)
-
-1. Every requirement is **quantified** — "low ripple" is not a requirement, "< 30 mVpp at 20 MHz BW" is.
-2. Every requirement names its **verification method** (test, analysis, inspection, demonstration).
-3. Requirements state **what**, never **how** — topology (buck) appears in the trade study, not here.
-4. Protection requirements demand a **non-software path** (PRT-5) — the same philosophy avionics standards require.
