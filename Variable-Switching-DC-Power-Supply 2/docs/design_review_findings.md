@@ -1,9 +1,5 @@
 # Design Review Findings & Corrective Actions
 
-A self-conducted design review of the released repository, run the way a peer review
-board would run it. Every finding has a severity, root cause, and corrective action.
-Shipping hardware without a review like this is how escapes reach the field.
-
 | # | Severity | Finding | Root cause | Corrective action | Status |
 |---|---|---|---|---|---|
 | DR-1 | **Critical (doc)** | Documentation showed 230 VAC → bridge → "45 V bus" with no transformer. Rectified 230 VAC is ~325 V DC — would destroy the 50 V bulk caps and 100 V FETs. The physical build includes T1; the docs omitted it. | Block diagram drawn from memory, never cross-checked against BOM/hardware | T1 (230:32 V, 250 VA) added to README architecture, BOM, and schematic corrections table | ✅ Closed |
