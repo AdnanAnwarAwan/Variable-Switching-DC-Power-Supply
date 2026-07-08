@@ -1,10 +1,5 @@
 # Component Derating & Worst-Case Analysis
 
-Aerospace-style stress analysis applied to the existing BOM. Derating philosophy per
-NASA EEE-INST-002 / MIL-STD-975 guidance: parts operate at a fraction of their rating
-across the full environment, so end-of-life drift, tolerance stacking, and transients
-never push a part past its limit.
-
 ## Derating targets used
 
 | Part class | Parameter | Target |
