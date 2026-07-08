@@ -56,5 +56,4 @@ the IRF540N's high gate charge (~71 nC) makes it a poor high-frequency switch.
 - 500 kHz: gate-drive loss ≈ Qg·Vgs·f ≈ 71n × 10 × 500k ≈ 0.36 W/FET plus switching loss — efficiency target fails
 
 **Decision:** 200 kHz. **Cost accepted:** physically large LC. A modern FET
-(e.g. 60 V NexFET, Qg < 10 nC) would allow 500 kHz+ and shrink the board — listed as
-an improvement in `firefly_jd_mapping.md`.
+(e.g. 60 V NexFET, Qg < 10 nC) would allow 500 kHz+ and shrink the board
