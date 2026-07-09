@@ -33,15 +33,6 @@ ngspice -b buck_powerstage.cir
    synchronous FET eliminates for the rest of the cycle, and the reason dead-time
    should be minimized but never zero (shoot-through).
 
-## Reproducing in LTspice (for interview demo)
-
-1. Draw the same stage; use `IRF540` from LTspice's library (or the switch model here).
-2. Complementary PULSE sources, 200 ns dead-time, D = 0.28, 5 µs period.
-3. `.tran 0 30m 0 50n` — plot V(out), I(L1), V(sw).
-4. Extensions worth showing live: sweep ESR (`.step param resr 10m 100m 30m`) to show
-   the ripple lever; add an input LC filter and demonstrate the undamped filter
-   interacting with the converter's negative input impedance (Middlebrook criterion),
-   then damp it.
 
 ## What is deliberately NOT simulated
 
