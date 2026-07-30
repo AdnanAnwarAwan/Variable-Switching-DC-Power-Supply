@@ -25,7 +25,7 @@ This project covers the complete engineering lifecycle:
 
 | Parameter | Value |
 |---|---|
-| AC Input | 90–240V, 50/60Hz |
+| AC Input | 220–240V, 50/60Hz |
 | DC Output Voltage | 1.25V – 30V (adjustable) |
 | DC Output Current | 0 – 5A continuous |
 | Switching Frequency | 200 kHz |
