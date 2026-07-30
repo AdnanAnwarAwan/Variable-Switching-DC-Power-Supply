@@ -96,7 +96,6 @@ Variable-Switching-DC-Power-Supply/
 │   ├── prototyping_guide.md     Staged prototyping & safe bring-up strategy
 │   ├── wiring_harness.md        Harness design (IPC/WHMA-A-620 practices)
 │   ├── design_review_findings.md  Self-review: known issues + corrective actions
-│   ├── firefly_jd_mapping.md    Aerospace relevance & flight evolution path
 │   └── test_procedure.md        Validation checklist with pass criteria
 │
 ├── simulation/
