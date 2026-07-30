@@ -10,7 +10,7 @@
 
 ## Overview
 
-A fully digital, high-efficiency bench power supply built from scratch using an STM32F103C8T6 microcontroller and a synchronous buck converter topology. The supply converts 90–240V AC mains to a stable, adjustable DC output regulated by a software PID control loop running at 50µs intervals.
+A fully digital, high-efficiency bench power supply built from scratch using an STM32F103C8T6 microcontroller and a synchronous buck converter topology. The supply converts 220V–240V AC mains to a stable, adjustable DC output regulated by a software PID control loop running at 50µs intervals.
 
 This project covers the complete engineering lifecycle:
 - **System architecture** and topology selection
