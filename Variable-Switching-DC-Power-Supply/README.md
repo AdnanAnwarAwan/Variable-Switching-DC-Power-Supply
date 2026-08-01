@@ -36,7 +36,7 @@ validation plan.
 
 | Parameter | Value |
 |---|---|
-| AC Input | 90–240 V, 50/60 Hz |
+| AC Input | 220–240 V, 50/60 Hz |
 | DC Output Voltage | 1.25 V – 30 V (adjustable) |
 | DC Output Current | 0 – 5 A continuous |
 | Switching Frequency | 200 kHz |
@@ -52,7 +52,7 @@ validation plan.
 ## System Architecture
 
 ```
-AC Mains (90–240V)
+AC Mains (220–240V)
     ├── F1 (2A slow-blow) ── MOV (275V) ── L1 (CM choke) ── Cx (X2)
     ▼
 T1 Step-Down Transformer (230V:32V, 250VA toroidal)   ← galvanic isolation (SELV)
@@ -96,7 +96,6 @@ Variable-Switching-DC-Power-Supply/
 │   ├── pcb_design_rules.md          4-layer stackup, layout rules, EMC
 │   ├── prototyping_guide.md         Staged, current-limited bring-up
 │   ├── wiring_harness.md            Harness design (IPC/WHMA-A-620)
-│   ├── design_review_findings.md    Self-review: issues found + fixes
 │   └── test_procedure.md            Validation checklist with pass criteria
 ├── simulation/
 │   ├── buck_powerstage.cir          ngspice netlist (verified)
