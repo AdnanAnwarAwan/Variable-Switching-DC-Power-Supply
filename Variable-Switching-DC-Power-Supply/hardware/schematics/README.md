@@ -1,7 +1,5 @@
 # Schematics
 
-## power_supply_circuit.png
-
 Complete circuit schematic covering all three stages:
 
 1. **Power stage** — AC input (fuse, MOV, common-mode choke, X-cap), bridge
