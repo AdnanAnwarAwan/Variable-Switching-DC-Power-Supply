@@ -13,7 +13,4 @@ Complete circuit schematic covering all three stages:
    encoder, status LEDs, fan driver.
 
 **Note:** the IR2104 is driven from a single STM32 PWM output (PA8 → IR2104 IN);
-the driver generates the complementary gate signals and dead-time. If your
-schematic instead shows two separate gate signals from the MCU, it was drawn for
-a dual-input driver (e.g. IR2110) — reconcile it with the firmware pin map in
-`firmware/Core/Inc/main.h` and see `docs/design_review_findings.md` DR-1.
+the driver generates the complementary gate signals and dead-time.
