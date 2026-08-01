@@ -38,4 +38,4 @@ ngspice -b buck_powerstage.cir
 
 The PID loop. The control loop runs in firmware; simulating it in SPICE would model
 my model, not my code. Loop behavior is verified on hardware (load-step scope capture,
-test §5) — simulate what you can't easily measure, measure what you can.
+test §5)
