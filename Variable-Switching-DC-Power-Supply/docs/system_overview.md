@@ -53,12 +53,3 @@ STM32 PID (50µs): ADC(PA0) → error = Vset−Vmeas → PID → duty → TIM1 C
 | Short circuit | INA226 ALERT | Immediate PWM disable | Partly | Manual restart |
 | Over-temperature | NTC 10kΩ + ADC | Fan ramp → shutdown >85°C | No | Auto after cooling |
 | Input surge | MOV 275V clamp | Energy absorbed | Yes (passive) | Transparent |
-
-**Note on PRT-5 (independent shutdown path):** as wired, the INA226 ALERT pin
-goes to an MCU EXTI, so even the "fast" over-current path is firmware-mediated
-(ALERT → MCU → /SD). A genuinely firmware-independent trip requires wiring ALERT
-(or a dedicated comparator) **directly** to the IR2104 /SD pin in hardware. This
-is an open hardware item — see `design_review_findings.md` DR-3. The previous
-version of this document described OVP as an analog "comparator on Vout"; there
-is no comparator in the BOM, so that claim has been corrected to reflect the
-firmware-based detection that actually exists.
