@@ -61,13 +61,9 @@ STM32F103C8T6  (PID loop, PWM, display, protection)
 ```
 
 Gate drive uses a **single** STM32 PWM output to the IR2104 `IN` pin; the IR2104
-generates the complementary high/low-side drive and its own dead-time. The STM32
-does **not** produce a complementary pair — see `docs/design_review_findings.md`
-(DR-1) for why the earlier complementary-PWM description was inconsistent with an
-IR2104.
+generates the complementary high/low-side drive and its own dead-time.
 
 ---
-
 ## Repository Structure
 
 ```
