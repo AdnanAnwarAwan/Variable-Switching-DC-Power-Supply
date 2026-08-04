@@ -7,9 +7,6 @@
 ![Status](https://img.shields.io/badge/results-simulated%20%2F%20target-yellow)
 
 ---
-## Status of results (read first)
-Performance figures in this repo are design targets backed by hand-calculation and SPICE simulation (see simulation/). Rows in the test procedure marked [PENDING] are awaiting bench measurement; drop measured values in as they are taken. Nothing here is claimed as hardware-verified until that column is filled. 
-
 
 ## Overview
 
@@ -23,6 +20,8 @@ schematic and 4-layer PCB design, embedded firmware, worst-case analysis, and a
 validation plan.
 
 ---
+## Status of results (read first)
+Performance figures in this repo are design targets backed by hand-calculation and SPICE simulation (see simulation/). Rows in the test procedure marked [PENDING] are awaiting bench measurement; drop measured values in as they are taken. Nothing here is claimed as hardware-verified until that column is filled. 
 
 ## Key Specifications (targets)
 
