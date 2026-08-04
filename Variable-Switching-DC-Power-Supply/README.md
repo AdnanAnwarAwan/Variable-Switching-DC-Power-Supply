@@ -8,16 +8,7 @@
 
 ---
 
-## Status of results (read first)
 
-Performance figures in this repo are **design targets backed by hand-calculation
-and SPICE simulation** (see `simulation/`). Rows in the test procedure marked
-*[PENDING]* are awaiting bench measurement; drop measured values in as they are
-taken. Nothing here is claimed as hardware-verified until that column is filled.
-This keeps the documentation honest about what has and hasn't been proven on
-metal. See `CHANGES.md` for the full list of corrections applied to this repo.
-
----
 
 ## Overview
 
