@@ -1,0 +1,43 @@
+# Bench configuration for the Variable Switching DC Power Supply harness.
+# Copy to config/bench.yaml and edit. bench.yaml is gitignored so that a
+# lab-specific setup never lands in version control.
+#
+# Get your resource strings with:  python -m psu_test.discover
+
+# ── VISA resource strings ────────────────────────────────────────────
+psu:   "USB0::0x1AB1::0x0E11::DP8C000000000::INSTR"
+load:  "GPIB0::5::INSTR"
+dmm:   "USB0::0x2A8D::0x1301::MY00000000::INSTR"
+scope: "USB0::0x1AB1::0x04CE::DS1Z000000000::INSTR"
+
+# ── STM32 debug UART (PA9, USART1_TX) ────────────────────────────────
+# Set to null to run without telemetry.
+stm32_port: "/dev/ttyUSB0"
+baudrate: 115200
+
+# ── DC bus injection (Phase 3 onward) ────────────────────────────────
+# The transformer secondary is disconnected and the bulk cap node is fed
+# from a bench supply. Your supply must actually reach this voltage — a
+# Rigol DP832 cannot (30 V max on CH1/CH2).
+dc_bus_voltage: 45.0
+dc_bus_current_limit: 2.5   # 45 V x 2.5 A = 112 W; full load needs ~75 W
+psu_channel: 1
+
+settle_delay_s: 0.5
+dmm_averages: 8
+
+simulate: false
+
+# ── Pass/fail thresholds (Testing & Validation Framework) ────────────
+limits:
+  v_nominal: 12.0
+  regulation_percent: 0.5      # Phase 5A
+  efficiency_percent: 88.0     # Phase 5C
+  ripple_mvpp: 30.0            # Phase 5A
+  settling_time_ms: 1.0        # Phase 5B
+  overshoot_percent: 5.0       # Phase 5B
+  ovp_response_us: 20.0        # Phase 6
+  ocp_alert_response_us: 10.0  # Phase 6
+  i_max: 5.0
+  v_max: 30.0
+  v_min: 1.25

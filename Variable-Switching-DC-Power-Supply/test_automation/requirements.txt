@@ -1,0 +1,17 @@
+# Instrument control
+pyvisa>=1.14
+pyvisa-py>=0.7        # pure-Python VISA backend; no vendor runtime needed
+pyserial>=3.5
+
+# Data and analysis
+numpy>=1.24
+pandas>=2.0
+matplotlib>=3.7
+PyYAML>=6.0
+
+# Reporting
+python-docx>=1.1
+openpyxl>=3.1
+
+# Test framework
+pytest>=7.4
